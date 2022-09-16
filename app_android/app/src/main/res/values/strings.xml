@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">login_android</string>
+    <string name="invalid_name">Porfavor ingrese su usuario</string>
+    <string name="invalid_password">Ingrese entre 6 y 8 dígitos</string>
+    <string name="invalid_confirm_password">La contraseña no coincide</string>
+    <string name="invalid_email">Ingrese un correo válido</string>
+</resources>

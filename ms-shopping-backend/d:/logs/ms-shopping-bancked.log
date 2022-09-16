@@ -1,0 +1,53 @@
+[2022-09-15 11:34:07:579] [ms-shopping-bancked,,},] [INFO] -  - HV000001: Hibernate Validator 6.2.0.Final
+[2022-09-15 11:34:08:435] [ms-shopping-bancked,,},] [INFO] -  - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-09-15 11:34:08:781] [ms-shopping-bancked,,},] [INFO] -  - Fetching config from server at : http://ms-config-backend-svc:8081
+[2022-09-15 11:34:13:179] [ms-shopping-bancked,,},] [INFO] -  - Located environment: name=ms-shopping, profiles=[dev], label=develop, version=d31d76dcbed6172574f22a2091e692f98f5b177a, state=null
+[2022-09-15 11:34:13:185] [ms-shopping-bancked,,},] [INFO] -  - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://gitlab.com/onlinestore4/devops/config-data.git/ms-shopping.yml'}]
+[2022-09-15 11:34:18:410] [ms-shopping-bancked,,},] [INFO] -  - The following profiles are active: dev
+[2022-09-15 11:34:20:788] [ms-shopping-bancked,,},] [INFO] -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2022-09-15 11:34:20:791] [ms-shopping-bancked,,},] [INFO] -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-09-15 11:34:20:856] [ms-shopping-bancked,,},] [INFO] -  - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+[2022-09-15 11:34:20:871] [ms-shopping-bancked,,},] [INFO] -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2022-09-15 11:34:20:873] [ms-shopping-bancked,,},] [INFO] -  - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2022-09-15 11:34:20:891] [ms-shopping-bancked,,},] [INFO] -  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mataases.shopping.infrastucture.repository.InvoiceItemsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-09-15 11:34:20:893] [ms-shopping-bancked,,},] [INFO] -  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mataases.shopping.infrastucture.repository.InvoiceRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-09-15 11:34:20:893] [ms-shopping-bancked,,},] [INFO] -  - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+[2022-09-15 11:34:21:216] [ms-shopping-bancked,,},] [INFO] -  - BeanFactory id=495ca196-c655-358b-8ca1-638b2a06b479
+[2022-09-15 11:34:21:628] [ms-shopping-bancked,,},] [INFO] -  - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@542c65d9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-09-15 11:34:21:642] [ms-shopping-bancked,,},] [INFO] -  - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-09-15 11:34:22:049] [ms-shopping-bancked,,},] [INFO] -  - Tomcat initialized with port(s): 8093 (http)
+[2022-09-15 11:34:22:067] [ms-shopping-bancked,,},] [INFO] -  - Initializing ProtocolHandler ["http-nio-8093"]
+[2022-09-15 11:34:22:068] [ms-shopping-bancked,,},] [INFO] -  - Starting service [Tomcat]
+[2022-09-15 11:34:22:068] [ms-shopping-bancked,,},] [INFO] -  - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-09-15 11:34:22:314] [ms-shopping-bancked,,},] [INFO] -  - Initializing Spring embedded WebApplicationContext
+[2022-09-15 11:34:22:314] [ms-shopping-bancked,,},] [INFO] -  - Root WebApplicationContext: initialization completed in 3842 ms
+[2022-09-15 11:34:22:695] [ms-shopping-bancked,,},] [INFO] -  - HikariPool-1 - Starting...
+[2022-09-15 11:34:22:883] [ms-shopping-bancked,,},] [INFO] -  - HikariPool-1 - Start completed.
+[2022-09-15 11:34:22:890] [ms-shopping-bancked,,},] [INFO] -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:invoiceDB'
+[2022-09-15 11:34:23:726] [ms-shopping-bancked,,},] [WARN] -  - Check result of the [RestTemplateSender{http://ms-zipkin-service-svc:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://ms-zipkin-service-svc:9411/api/v2/spans": ms-zipkin-service-svc; nested exception is java.net.UnknownHostException: ms-zipkin-service-svc}]
+[2022-09-15 11:34:25:711] [ms-shopping-bancked,,},] [INFO] -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-09-15 11:34:25:981] [ms-shopping-bancked,,},] [INFO] -  - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2022-09-15 11:34:26:458] [ms-shopping-bancked,,},] [INFO] -  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-15 11:34:26:800] [ms-shopping-bancked,,},] [INFO] -  - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-15 11:34:28:414] [ms-shopping-bancked,,},] [INFO] -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-15 11:34:28:450] [ms-shopping-bancked,,},] [INFO] -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-09-15 11:34:29:757] [ms-shopping-bancked,,},] [WARN] -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-09-15 11:34:30:539] [ms-shopping-bancked,,},] [INFO] -  - 
+
+Using generated security password: a2fde015-0547-4d02-be50-19468398630a
+
+[2022-09-15 11:34:30:927] [ms-shopping-bancked,,},] [INFO] -  - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@423e35f0, org.springframework.security.web.context.SecurityContextPersistenceFilter@68ad030d, org.springframework.security.web.header.HeaderWriterFilter@372153eb, org.springframework.security.web.authentication.logout.LogoutFilter@4daee083, com.mataases.shopping.interfaces.rest.auth.JWTAuthenticationFilter@14bbfdee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e49adfa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c0b83af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@139a97e7, org.springframework.security.web.session.SessionManagementFilter@32a7c583, org.springframework.security.web.access.ExceptionTranslationFilter@333afc53, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43ef1243]
+[2022-09-15 11:34:32:637] [ms-shopping-bancked,,},] [INFO] -  - Exposing 16 endpoint(s) beneath base path '/actuator'
+[2022-09-15 11:34:32:795] [ms-shopping-bancked,,},] [INFO] -  - Starting ProtocolHandler ["http-nio-8093"]
+[2022-09-15 11:34:32:831] [ms-shopping-bancked,,},] [INFO] -  - Tomcat started on port(s): 8093 (http) with context path ''
+[2022-09-15 11:34:32:871] [ms-shopping-bancked,,},] [INFO] -  - Started MsShoppingBackendApplication in 26.114 seconds (JVM running for 32.551)
+[2022-09-15 13:01:09:382] [ms-shopping-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m14s165ms).
+[2022-09-15 13:43:27:373] [ms-shopping-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m18s99ms).
+[2022-09-15 13:56:27:740] [ms-shopping-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m59s904ms).
+[2022-09-15 16:45:55:660] [ms-shopping-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s834ms).
+[2022-09-15 20:38:13:983] [ms-shopping-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m43s156ms).
+[2022-09-15 21:13:27:935] [ms-shopping-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m14s108ms).
+[2022-09-15 21:23:01:112] [ms-shopping-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m33s74ms).
+[2022-09-15 22:16:14:415] [ms-shopping-bancked,,},] [INFO] -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-09-15 22:16:15:626] [ms-shopping-bancked,,},] [INFO] -  - HikariPool-1 - Shutdown initiated...
+[2022-09-15 22:16:15:729] [ms-shopping-bancked,,},] [INFO] -  - HikariPool-1 - Shutdown completed.

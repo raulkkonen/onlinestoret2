@@ -1,0 +1,40 @@
+[2022-09-15 11:29:46:937] [ms-product-bancked,,},] [INFO] -  - HV000001: Hibernate Validator 6.2.0.Final
+[2022-09-15 11:29:50:604] [ms-product-bancked,,},] [INFO] -  - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-09-15 11:29:56:820] [ms-product-bancked,,},] [INFO] -  - Fetching config from server at : http://ms-config-backend-svc:8081
+[2022-09-15 11:30:03:545] [ms-product-bancked,,},] [INFO] -  - Located environment: name=ms-product, profiles=[dev], label=develop, version=d31d76dcbed6172574f22a2091e692f98f5b177a, state=null
+[2022-09-15 11:30:03:550] [ms-product-bancked,,},] [INFO] -  - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://gitlab.com/onlinestore4/devops/config-data.git/Config resource 'file [/tmp/config-repo-5411012276229631987/ms-product.yml' via location '' (document #0)'}]
+[2022-09-15 11:30:08:681] [ms-product-bancked,,},] [INFO] -  - The following profiles are active: dev
+[2022-09-15 11:30:10:381] [ms-product-bancked,,},] [INFO] -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-09-15 11:30:10:446] [ms-product-bancked,,},] [INFO] -  - Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+[2022-09-15 11:30:10:693] [ms-product-bancked,,},] [INFO] -  - BeanFactory id=e58f1802-4fe2-3a0b-b4db-d7ec40eca1f7
+[2022-09-15 11:30:11:371] [ms-product-bancked,,},] [INFO] -  - Tomcat initialized with port(s): 8091 (http)
+[2022-09-15 11:30:11:389] [ms-product-bancked,,},] [INFO] -  - Initializing ProtocolHandler ["http-nio-8091"]
+[2022-09-15 11:30:11:390] [ms-product-bancked,,},] [INFO] -  - Starting service [Tomcat]
+[2022-09-15 11:30:11:390] [ms-product-bancked,,},] [INFO] -  - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-09-15 11:30:11:544] [ms-product-bancked,,},] [INFO] -  - Initializing Spring embedded WebApplicationContext
+[2022-09-15 11:30:11:544] [ms-product-bancked,,},] [INFO] -  - Root WebApplicationContext: initialization completed in 2773 ms
+[2022-09-15 11:30:11:777] [ms-product-bancked,,},] [INFO] -  - HikariPool-1 - Starting...
+[2022-09-15 11:30:11:920] [ms-product-bancked,,},] [INFO] -  - HikariPool-1 - Start completed.
+[2022-09-15 11:30:11:930] [ms-product-bancked,,},] [INFO] -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:productDB'
+[2022-09-15 11:30:12:278] [ms-product-bancked,,},] [WARN] -  - Check result of the [RestTemplateSender{http://ms-zipkin-service-svc:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://ms-zipkin-service-svc:9411/api/v2/spans": ms-zipkin-service-svc; nested exception is java.net.UnknownHostException: ms-zipkin-service-svc}]
+[2022-09-15 11:30:12:814] [ms-product-bancked,,},] [INFO] -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-09-15 11:30:12:939] [ms-product-bancked,,},] [INFO] -  - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2022-09-15 11:30:13:284] [ms-product-bancked,,},] [INFO] -  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-15 11:30:13:511] [ms-product-bancked,,},] [INFO] -  - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-15 11:30:14:397] [ms-product-bancked,,},] [INFO] -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-15 11:30:14:409] [ms-product-bancked,,},] [INFO] -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-09-15 11:30:15:066] [ms-product-bancked,,},] [WARN] -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-09-15 11:30:16:638] [ms-product-bancked,,},] [INFO] -  - Exposing 16 endpoint(s) beneath base path '/actuator'
+[2022-09-15 11:30:16:700] [ms-product-bancked,,},] [INFO] -  - Starting ProtocolHandler ["http-nio-8091"]
+[2022-09-15 11:30:16:724] [ms-product-bancked,,},] [INFO] -  - Tomcat started on port(s): 8091 (http) with context path ''
+[2022-09-15 11:30:16:755] [ms-product-bancked,,},] [INFO] -  - Started MsProductBackendApplication in 31.34 seconds (JVM running for 43.405)
+[2022-09-15 13:00:59:405] [ms-product-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m14s183ms).
+[2022-09-15 13:43:48:352] [ms-product-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m18s365ms).
+[2022-09-15 13:56:18:268] [ms-product-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m59s906ms).
+[2022-09-15 16:46:16:934] [ms-product-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s841ms).
+[2022-09-15 20:38:05:222] [ms-product-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m42s826ms).
+[2022-09-15 21:13:19:459] [ms-product-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m14s408ms).
+[2022-09-15 21:22:52:628] [ms-product-bancked,,},] [WARN] -  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m33s61ms).
+[2022-09-15 21:44:01:213] [ms-product-bancked,,},] [INFO] -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-09-15 21:44:02:268] [ms-product-bancked,,},] [INFO] -  - HikariPool-1 - Shutdown initiated...
+[2022-09-15 21:44:02:295] [ms-product-bancked,,},] [INFO] -  - HikariPool-1 - Shutdown completed.

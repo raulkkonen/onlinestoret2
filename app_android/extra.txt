@@ -1,0 +1,20 @@
+fun clicBtnRegistrar(view: View){
+        val url = "http://192.168.0.33:8095/security/users"
+        val queue = Volley.newRequestQueue(this)
+        var resultadoPost = object : StringRequest(Request.Method.POST,url,
+        Response.Listener<String> { response ->
+            Toast.makeText(this,"Usuario Registrado exitosamente", Toast.LENGTH_LONG).show()
+        }, Response.ErrorListener { error ->
+                Toast.makeText(this,"Error $error al Registrar", Toast.LENGTH_LONG).show()
+            }){
+            override fun getParams(): MutableMap<String, String>? {
+                val parametros =  HashMap<String,String>()
+                parametros.put("username",txtuserup?.text.toString())
+                parametros.put("password",txtpasswordup?.text.toString())
+                parametros.put("confirmPassword",txtconfirmpasswordup?.text.toString())
+                parametros.put("email",txtemailup?.text.toString())
+                return parametros
+            }
+        }
+        queue.add(resultadoPost)
+    }
