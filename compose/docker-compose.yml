@@ -2,7 +2,7 @@ version: '3.6'
 services: 
     # MySQL
     db:
-        image: edumar111/mysql-service:1.0.0
+        image: raulkkonen/mysql-service:1.0.0
         container_name: ms-mysql-service-svc
         restart: always
         ports:
@@ -17,7 +17,7 @@ services:
         volumes: 
             - mysqldata:/var/lib/mysql
     redis-service:
-        image: edumar111/redis-service:1.0.0
+        image: raulkkonen/redis-service:1.0.0
         container_name: ms-redis-service-svc
         ports:
         - 8087:8087
@@ -29,7 +29,7 @@ services:
         ports:
         - "9411:9411"
     config-service:
-        image: edumar111/config-service:1.0.0
+        image: raulkkonen/config-service:1.0.0
         container_name: ms-config-backend-svc
         environment:
         - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
